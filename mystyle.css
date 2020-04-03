@@ -1,15 +1,64 @@
+.main{
+  background-color: rgb(30, 216, 108);
+}
 .cards {
     max-width: 950px;
-    margin: 0 ;
+    margin: auto;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-    gap: 130px;
+    gap: 20px;
+
   }
 .card{
   box-shadow: 0 4px 8px 0 rgba(19, 18, 18, 0.2);
+  background-color: lightcyan;
+
 }
 .image{
   width: 100%;
   display: block;
+}
+
+.name{
+  box-shadow: 0 4px 8px 0 rgba(19, 18, 18, 0.2);
+  background-color: lightcyan;
+  font-style: normal;
+}
+.info{
+  box-shadow: 0 4px 8px 0 rgba(19, 18, 18, 0.2);
+  font-style: initial;
+  font-weight: bolder;
+  margin-left: 0;
+  padding: 0;
+  background-color: lightcyan;
+
+}
+
+.navbar-brand{
+  box-shadow: 0 4px 8px 0 rgba(19, 18, 18, 0.2);
+  font-family: 'Times New Roman', Times, serif;
+  display: block;
+}
+.list-group{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.active{
+  display: block;
+  background-color: rgb(76, 107, 175);
+  color: white;
+}
+.footer {
+  
+  left: 1;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
 }
