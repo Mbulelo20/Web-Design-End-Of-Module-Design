@@ -1,0 +1,15 @@
+.add-user{
+    margin-right: 0;
+}
+.cards {
+    max-width: 950px;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 20px;
+    border-radius: 15px 50px 30px;
+}
+.flex-container{
+    display: flexbox;
+}
