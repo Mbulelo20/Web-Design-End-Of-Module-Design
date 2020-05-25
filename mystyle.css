@@ -1,5 +1,14 @@
-.main{
-background-color: rgb(224, 224, 109);
+.main, html{
+  background-image: url("https://www.barcelonacheckin.com/img/stored_images/barcelona/articles/camp-nou.jpg");
+   /* The image used */
+
+   /* Full height */
+   height: auto;
+ 
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 .cards {
     padding-top: 60px;
@@ -14,12 +23,14 @@ background-color: rgb(224, 224, 109);
 .card{
   box-shadow: 0 4px 8px 0 rgba(19, 18, 18, 0.2);
   background-color: lightsteelblue;
+  max-width: 1360px;
+
 }
 
 .user-pic{
-  width: 100%;
   display: block;
-  border-radius: 60%;
+  height: 65%;
+  width: 100%;
 }
 
 .name{
@@ -41,6 +52,17 @@ background-color: rgb(224, 224, 109);
   box-shadow: 0 4px 8px 0 rgba(19, 18, 18, 0.2);
   font-family: 'Times New Roman', Times, serif;
   display: block;
+  padding: 0 15px;
+  height: 80px;
+  line-height: 80px;
+}
+.navbar {
+  min-height: 80px;
+}
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
 }
 .list-group{
   display: block;
