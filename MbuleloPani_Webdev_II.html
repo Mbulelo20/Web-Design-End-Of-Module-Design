@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>End Of Module Project</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="mystyle.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    </head>
+    <body class="main">
+        <div>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <!-- Brand/logo -->
+                <a class="navbar-brand" href="#">Cape Town Sporting Magazine</a>
+                
+                <!-- Links -->
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">NEWS FEED</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">USERS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ADMIN</a>
+                  </li>
+                 <!-- Button for Modal on the 1st card -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Add">
+                    Add User
+                  </button>
+                                <!-- add user Modal -->
+                    <div class="modal" id="Add">
+                        <div class="modal-dialog modal-sm"></div>
+                        <div class="modal-content">
+                    
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                            <h4 class="modal-title">Add a user</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                    
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <form class="was-validated" action="forms.html">
+                                    <div class="form-group">
+                                        <label for="fname">Firstname</label>
+                                        <input type="text" class="form-control" id="fname" required>
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="lname">Lastname</label>
+                                        <input type="text" class="form-control" id="lname" required>
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="text" class="form-control" id="email" required>
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Phone">Contact phone</label>
+                                        <input type="text" class="form-control" id="Phone" required>
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+
+                                </form>
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+        <div><center><h1>Top 6 Best Payers in Europe</h1></center></div>
+        <!--first profile card-->
+        <div class="cards border-primary mb-3">
+            <div class="card">
+                <img  src="https://s.hs-data.com/bilder/spieler/gross/205026.jpg" alt="mane" class="user-pic" data-toggle="modal" data-target="#profile1">
+                <div class="name">
+                    <h1>Sadio Mane</h1>
+                </div>
+                <div class="info">
+                    <p><a href="#"><i class="material-icons">email</i></a>Smane@Liverpool.com</p>
+                    <p><a href="#"><i class="material-icons">contact_phone</i></a>555 7036 422</p>
+                    <p><a href="#"><i class="material-icons">phone</i></a>105 5655 421</p>
+                    <!--Button for Modal-->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#profile1">
+                        More Details
+                    </button>
+                    <!-- The Modal -->
+                    <div class="modal" id="profile1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">More Details</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p><a href="#"><i class="material-icons">home</i></a>Catalonia</p>
+                                    <div>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                <th>Next Of Kin</th>
+                                                <th>Relation</th>
+                                                <th>Next of kin address</th>
+                                                <th>Contact number</th>
+                                                </tr>
+                                            </thead>
+                                            <thead></thead>
+                                                <tr>
+                                                    <td>George Mane</td>
+                                                    <td>Brother</td>
+                                                    <td>Paris, France</td>
+                                                    <td>0657895582</td>
+                                                </tr>
+                                            </thead>
+                                        </table> 
+                                    </div>                 
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Button to Open Delete Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteUser">
+                            Delete User
+                        </button>
+                        <!-- The Modal -->
+                        <div class="modal" id="deleteUser">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">You want to delete this player?</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <button class="btn btn-primary">Yes</button>
+                                        <button class="btn btn-danger">No</button>
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        
+            <!--2nd profile card-->
+            <div class="card">
+                <img  src="https://s.hs-data.com/bilder/spieler/gross/142263.jpg" alt="deBruyne" class="user-pic" data-toggle="modal" data-target="#profile2">
+                <div class="name">
+                    <h1>Kevin De Bruyne</h1>
+                </div>
+                <div class="info">
+                    <p><a href="#"><i class="material-icons">email</i></a>deBruyne@mancity.com</p>
+                    <p><a href="#"><i class="material-icons">contact_phone</i></a>555 4015 402</p>
+                    <p><a href="#"><i class="material-icons">phone</i></a>021 5655 421</p>
+                    <!--Button for Modal-->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#profile2">
+                        More Details
+                    </button>
+                    <!-- The Modal -->
+                    <div class="modal" id="profile2">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">More Details</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p><a href="#"><i class="material-icons">home</i></a>Kingdom of Belgium</p>
+                                    <div>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                <th>Next Of Kin</th>
+                                                <th>Relation</th>
+                                                <th>Next of kin address</th>
+                                                <th>Contact number</th>
+                                                </tr>
+                                            </thead>
+                                            <thead></thead>
+                                                <tr>
+                                                    <td>Marie de Bruyne</td>
+                                                    <td>Wife</td>
+                                                    <td>Belgium</td>
+                                                    <td>0657895582</td>
+                                                </tr>
+                                            </thead>
+                                        </table> 
+                                    </div>                 
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Button to Open Delete Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteUser">
+                            Delete User
+                        </button>
+                        <!-- The Modal -->
+                        <div class="modal" id="deleteUser">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">You want to delete this player?</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <button class="btn btn-primary">Yes</button>
+                                        <button class="btn btn-danger">No</button>
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <!--3rd profile card-->
+            <div class="card">
+                <img  src="https://s.hs-data.com/bilder/spieler/gross/153546.jpg" alt="griezmann" class="user-pic" data-toggle="modal" data-target="#profile3">
+                <div class="name">
+                    <h1>A. Griezmann</h1>
+                </div>
+                <div class="info">
+                    <p><a href="#"><i class="material-icons">email</i></a>Agriezmann@gmail.com</p>
+                    <p><a href="#"><i class="material-icons">contact_phone</i></a>555 7036 422</p>
+                    <p><a href="#"><i class="material-icons">phone</i></a>105 5655 421</p>
+                    <!--Button for Modal-->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#profile3">
+                        More Details
+                    </button>
+                    <!-- The Modal -->
+                    <div class="modal" id="profile3">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">More Details</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p><a href="#"><i class="material-icons">home</i></a>Catalonia</p>
+                                    <div>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                <th>Next Of Kin</th>
+                                                <th>Relation</th>
+                                                <th>Next of kin address</th>
+                                                <th>Contact number</th>
+                                                </tr>
+                                            </thead>
+                                            <thead></thead>
+                                                <tr>
+                                                    <td>Marie Griezmann</td>
+                                                    <td>Mother</td>
+                                                    <td>Paris, France</td>
+                                                    <td>0657895582</td>
+                                                </tr>
+                                            </thead>
+                                        </table> 
+                                    </div>                 
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Button to Open Delete Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteUser">
+                            Delete User
+                        </button>
+                        <!-- The Modal -->
+                        <div class="modal" id="deleteUser">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">You want to delete this player?</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <button class="btn btn-primary">Yes</button>
+                                        <button class="btn btn-danger">No</button>
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <!--4th profile card-->
+            <div class="card">
+                <img  src="https://s.hs-data.com/bilder/spieler/gross/26622.jpg" alt="avatar" class="user-pic" data-toggle="modal" data-target="#profile4">
+                <div class="name">
+                    <h1>Lionel Messi</h1>
+                </div>
+                <div class="info">
+                    <p><a href="#"><i class="material-icons">email</i></a>liomessi@barca.com</p>
+                    <p><a href="#"><i class="material-icons">contact_phone</i></a>021 5655 421</p>
+                    <p><a href="#"><i class="material-icons">phone</i></a>013 558 1423</p>
+                                        <!-- Button for Modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#profile4">
+                        More Details
+                    </button>
+                    <!-- The Modal -->
+                    <div class="modal" id="profile4">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">More Details</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p><a href="#"><i class="material-icons">home</i></a>Barcelona, Spain</p>
+                                    <div>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                <th>Next Of Kin</th>
+                                                <th>Relation</th>
+                                                <th>Next of kin address</th>
+                                                <th>Contact number</th>
+                                                </tr>
+                                            </thead>
+                                            <thead></thead>
+                                                <tr>
+                                                    <td>Gearge Messi</td>
+                                                    <td>Father</td>
+                                                    <td>Buenos Aries, Argentina</td>
+                                                    <td>0657895582</td>
+                                                </tr>
+                                            </thead>
+                                        </table> 
+                                    </div>                 
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Button to Open Delete Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteUser">
+                            Delete User
+                        </button>
+                        <!-- The Modal -->
+                        <div class="modal" id="deleteUser">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">You want to delete this player?</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <button class="btn btn-primary">Yes</button>
+                                        <button class="btn btn-danger">No</button>
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <!--profile card 5-->
+            <div class="card">
+                <img  src="https://s.hs-data.com/bilder/spieler/gross/180976.jpg" alt="avatar" class="user-pic" data-toggle="modal" data-target="#profile5">
+                <div class="name">
+                    <h1>Paul Pogba</h1>
+                </div>
+                <div class="info">
+                    <p><a href="#"><i class="material-icons">email</i></a>pogba@united.com</p>
+                    <p><a href="#"><i class="material-icons">contact_phone</i></a>073 7036 422</p>
+                    <p><a href="#"><i class="material-icons">phone</i></a>555-023-421</p>
+                                        <!-- Button for Modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#profile5">
+                        More Details
+                    </button>
+                    <!-- The Modal -->
+                    <div class="modal" id="profile5">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">More Details</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p><a href="#"><i class="material-icons">home</i></a>90 Plain Str</p>
+                                    <div>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                <th>Next Of Kin</th>
+                                                <th>Relation</th>
+                                                <th>Next of kin address</th>
+                                                <th>Contact number</th>
+                                                </tr>
+                                            </thead>
+                                            <thead></thead>
+                                                <tr>
+                                                    <td>John Pogba</td>
+                                                    <td>Brother</td>
+                                                    <td>London, UK</td>
+                                                    <td>0657895582</td>
+                                                </tr>
+                                            </thead>
+                                        </table> 
+                                    </div>                 
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Button to Open Delete Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteUser">
+                            Delete User
+                        </button>
+                        <!-- The Modal -->
+                        <div class="modal" id="deleteUser">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">You want to delete this player?</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <button class="btn btn-primary">Yes</button>
+                                        <button class="btn btn-danger">No</button>
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <!--Profile card 6-->
+            <div class="card">
+                <img  src="https://s.hs-data.com/bilder/spieler/gross/43165.jpg" alt="avatar" class="user-pic" data-toggle="modal" data-target="#profile6">
+                <div class="name">
+                    <h1>Mesut Ozil</h1>
+                </div>
+                <div class="info">
+                    <p><a href="#"><i class="material-icons">email</i></a>ozilmesutm@arsenal.com</p>
+                    <p><a href="#"><i class="material-icons">contact_phone</i></a>555-284-1456</p>
+                    <p><a href="#"><i class="material-icons">phone</i></a>555-023-421</p>
+                                        <!-- Button for Modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#profile6">
+                        More Details
+                    </button>
+                    <!-- The Modal -->
+                    <div class="modal" id="profile6">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">More Details</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p><a href="#"><i class="material-icons">home</i></a>90 Plain Str</p>
+                                    <div>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                <th>Next Of Kin</th>
+                                                <th>Relation</th>
+                                                <th>Next of kin address</th>
+                                                <th>Contact number</th>
+                                                </tr>
+                                            </thead>
+                                            <thead></thead>
+                                                <tr>
+                                                    <td>D. Ozil</td>
+                                                    <td>Father</td>
+                                                    <td>Berlin, Germany</td>
+                                                    <td>0657895582</td>
+                                                </tr>
+                                            </thead>
+                                        </table> 
+                                    </div>                 
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Button to Open Delete Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteUser">
+                            Delete User
+                        </button>
+                        <!-- The Modal -->
+                        <div class="modal" id="deleteUser">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">You want to delete this player?</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <button class="btn btn-primary">Yes</button>
+                                        <button class="btn btn-danger">No</button>
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+  
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+            <div class="footer">
+                <p>Disclaimer: All information included in this page is provided with the permission of the users.</p>
+            </div>
+        </div>   
+    </body>
+</html> 
